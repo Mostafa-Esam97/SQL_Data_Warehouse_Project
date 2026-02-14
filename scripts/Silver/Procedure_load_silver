@@ -1,3 +1,27 @@
+/*
+====================================================
+Procedure Name : silver.load_silver
+Layer          : Silver
+Schema         : silver
+Type           : Stored Procedure
+
+Purpose :
+- Load and transform data from Bronze layer into Silver layer tables.
+- Cleanse and standardize CRM, Sales, and ERP data.
+- Truncate existing Silver tables before loading new data.
+- Track ingestion time using dwh_create_date.
+
+Notes :
+- CRM tables: standardize gender, marital status, product lines, and calculate end dates.
+- Sales tables: clean dates, calculate missing sales or prices.
+- ERP tables: clean customer IDs, birthdates, country names, and load product categories.
+- Execution time is logged using PRINT statements.
+- Error handling is implemented using TRY / CATCH.
+
+Usage Example :
+- Exec silver.load_silver
+====================================================
+*/
 
 
 CREATE OR ALTER PROCEDURE silver.load_silver
