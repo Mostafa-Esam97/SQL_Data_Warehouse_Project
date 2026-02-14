@@ -1,22 +1,30 @@
 /*
-=============================================================================
-# Silver Layer DDL Commands
+====================================================
+File Name      : silver_tables_ddl
+Layer          : Silver
+Schema         : silver
+Type           : DDL Commands (Tables)
 
-SQL script to create tables in the `silver` schema of the Data Warehouse.
+Purpose :
+- Create Silver layer tables for Data Warehouse.
+- Tables include CRM, Sales, and ERP data.
+- Ensure dwh_create_date is added for tracking ingestion time.
+- Drop existing tables before creation to refresh schema.
 
-## Tables:
+Tables :
+- crm_cust_info      : Customer personal details (name, gender, marital status, create date).
+- crm_prd_info       : Product information (category, cost, line, start and end dates).
+- crm_sales_details  : Sales transactions (order, ship, due dates, quantity, price, total sales).
+- erp_CUST_AZ12      : ERP customer data (ID, birthdate, gender).
+- erp_LOC_A101       : ERP location data (customer ID, country).
+- erp_PX_CAT_G1V2    : ERP product categories (ID, category, subcategory, maintenance).
 
-- **crm_cust_info** – Customer details (name, gender, marital status, create date).  
-- **crm_prd_info** – Product info (category, cost, line, dates).  
-- **crm_sales_details** – Sales transactions (order, ship, due dates, quantity, price).  
-- **erp_CUST_AZ12** – ERP customer data (ID, birthdate, gender).  
-- **erp_LOC_A101** – ERP location data (customer ID, country).  
-- **erp_PX_CAT_G1V2** – ERP product categories (ID, category, subcategory, maintenance).
+Notes :
+- All tables have dwh_create_date defaulting to GETDATE().
+- Tables are truncated before loading data in the stored procedure.
+====================================================
+*/
 
-**Notes:** All tables have `dwh_create_date` defaulting to `GETDATE()`
-and drop existing tables before creation.
-=============================================================================
-/*
 
 
 
