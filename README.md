@@ -103,7 +103,7 @@ This project delivers a structured, validated, and analytics-ready Data Warehous
 **Mostafa Esam Ahmed Mahmoud**  
 Civil Engineer | Data Analysis Trainee  
 
-- Trained in **Data Analysis at DEPI – Digital Egypt Pioneers Institution**  
+- Trained in **Data Analysis at DEPI – Digital Egypt Pioneers Initiative**  
 - Learned **SQL** and **Data Warehousing concepts** for analytical projects  
 - Gained practical experience with **Power BI** for data modeling and dashboards  
 - Built hands-on projects implementing **ETL pipelines** and **Star Schema** concepts  
