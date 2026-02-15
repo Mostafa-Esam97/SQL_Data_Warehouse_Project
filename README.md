@@ -79,7 +79,6 @@ Comprehensive data quality checks were implemented:
 
 These validations ensure the Gold Layer is accurate, consistent, and production-ready.
 
----
 
 ## 🧠 Skills Demonstrated
 
@@ -89,6 +88,7 @@ These validations ensure the Gold Layer is accurate, consistent, and production-
 - Dimensional Modeling  
 - Data Quality Framework  
 - SQL (Joins, Views, Window Functions)  
+- Power BI for reporting and dashboards  
 
 ---
 
@@ -98,17 +98,15 @@ This project delivers a structured, validated, and analytics-ready Data Warehous
 
 ---
 
-
 ## 👤 About the Author
 
 **Mostafa Esam Ahmed Mahmoud**  
 Civil Engineer | Data Analysis Trainee  
 
-- Trained in **Data Analysis at DEPI – Digital Egypt Pioneers Intiative**  
+- Trained in **Data Analysis at DEPI – Digital Egypt Pioneers Institution**  
 - Learned **SQL** and **Data Warehousing concepts** for analytical projects  
 - Gained practical experience with **Power BI** for data modeling and dashboards  
 - Built hands-on projects implementing **ETL pipelines** and **Star Schema** concepts  
 - Engineering background with strong analytical and problem-solving skills  
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Mostafa_Esam-blue?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mostafa-esam-356285202)
-
