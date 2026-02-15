@@ -6,7 +6,7 @@ This catalog provides details of all the project Views in the Gold layer, includ
 
 ---
 
-## View: dim_customers
+## 1- dim_customers
 
 <p>This dimension table contains customer information, including personal details, gender, marital status, and country.</p>
 
@@ -70,7 +70,7 @@ This catalog provides details of all the project Views in the Gold layer, includ
 
 ---
 
-## View: dim_products
+## 2- dim_products
 
 <p>This dimension table contains product information, including product categories, costs, and maintenance status.</p>
 
@@ -139,7 +139,7 @@ This catalog provides details of all the project Views in the Gold layer, includ
 
 ---
 
-## View: fact_sales
+## 3- fact_sales
 
 <p>This fact table contains sales transactions, linking customers and products with order details, quantities, and amounts.</p>
 
