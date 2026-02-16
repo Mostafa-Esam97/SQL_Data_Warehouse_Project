@@ -25,7 +25,7 @@
 Crating First Dimention Table gold.dim_customers
 ============================================================================
 
-CREATE VIEW gold.dim_customers AS
+CREATE OR ALTER VIEW gold.dim_customers AS
 SELECT
 	ROW_NUMBER() OVER (ORDER BY cst_id) AS customer_key,
 	ci.cst_id AS customer_id,
@@ -49,7 +49,7 @@ ON ci.cst_key = la.CID
 Crating Second Dimention Table gold.dim_orders
 ============================================================================
     
-CREATE VIEW gold.dim_products AS
+CREATE OR ALTER VIEW gold.dim_products AS
 SELECT 
 	ROW_NUMBER () OVER (ORDER BY pn.prd_start_dt , pn.prd_key) AS product_key,
 	pn.prd_id AS product_id,
@@ -71,7 +71,7 @@ WHERE pn.prd_end_dt IS NULL -- Filter Out All Historical Data
 Crating Fact Table gold.fact_sales
 ============================================================================
     
-CREATE VIEW gold. fact_sales AS
+CREATE OR ALTER VIEW gold. fact_sales AS
 SELECT  
 	sd.sls_ord_num AS order_number,
 	pr.product_key,
